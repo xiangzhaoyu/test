@@ -10,6 +10,11 @@ import sys, os
 from PIL import Image
 from functools import reduce
 import numpy as np
+import operator
+import math
+import xlrd
+from xlwt import *
+from common_requests import get_request
 
 
 def compose(*func):
@@ -124,12 +129,93 @@ def sales(count):
 
 
 def temp():
-    img = Image.open('/Users/xiangzy/PycharmProjects/tianqi/train_data/tianqi_data/img/0a21a05089687ed72de4af78f66fbac0/001.jpg')
-    crop_img = img.crop((2000, 2000, 2416, 2416))
-    crop_img.save('crop.jpg')
-    # paste_img = Image.new('RGB', (1000, 1000), (128, 128, 128))
-    # paste_img.paste(img, (500, 500))
-    # paste_img.save('paste.jpg')
+    feed = ['feed_id','notice_type','state','fantuan_id','typ','my_sort_time','notice_type','fantuan_id','state','typ','weight','fantuan_id','state','notice_type','my_sort_time','fantuan_id','uuid','state','typ','weight','hot_count','comment_count','praise_count','id','fantuan_id','uuid','state','typ','weight','id','hot_count','comment_count','praise_count','feed_id','uuid','notice_type','state','typ','source','id','data_key','data_key','typ','typ','data_key','state','fantuan_id','notice_type','typ','create_date','uuid','fantuan_id','id','state','fantuan_id','id','state','create_time','uuid','fantuan_id','fantuan_id','state','state','fantuan_id','id','state','fantuan_id','uuid','notice_type','id','state','fantuan_id','uuid','typ','notice_type','id','state','fantuan_id','uuid','typ','notice_type','feed_id','id','fantuan_id','state','notice_type','typ','id','source','link_key','typ','source','data_key']
+    feed_bell = ['state','expire_time','feed_id','bell_type','fnatuan_id','topic_id','hot_search_id','update_time','feed_id','bell_type','state','expire_time','feed_id','state','expire_time','bell_type','bell_type','feed_id','fnatuan_id','topic_id','hot_search_id','update_time','id']
+    feed_expand = ['feed_id','id','feed_id','feed_id','id']
+    feed_rec = ['feed_id','state','update_time','id','feed_id','id','feed_id','state','feed_id','state','fantuan_id','uuid','create_time']
+
+    dic_f = {}
+    for f in feed:
+        if f in dic_f.keys():
+            dic_f[f] = dic_f[f] + 1
+        else:
+            dic_f[f] = 1
+    sorted_list_a = sorted(dic_f.items(), key=operator.itemgetter(1))
+    print('feed')
+    print(sorted_list_a)
+
+    dic_f = {}
+    for f in feed_bell:
+        if f in dic_f.keys():
+            dic_f[f] = dic_f[f] + 1
+        else:
+            dic_f[f] = 1
+    sorted_list_a = sorted(dic_f.items(), key=operator.itemgetter(1))
+    print('feed_bell')
+    print(sorted_list_a)
+
+    dic_f = {}
+    for f in feed_expand:
+        if f in dic_f.keys():
+            dic_f[f] = dic_f[f] + 1
+        else:
+            dic_f[f] = 1
+    sorted_list_a = sorted(dic_f.items(), key=operator.itemgetter(1))
+    print('feed_expand')
+    print(sorted_list_a)
+
+    dic_f = {}
+    for f in feed_rec:
+        if f in dic_f.keys():
+            dic_f[f] = dic_f[f] + 1
+        else:
+            dic_f[f] = 1
+    sorted_list_a = sorted(dic_f.items(), key=operator.itemgetter(1))
+    print('feed_rec')
+    print(sorted_list_a)
+
+    s = 'abc'
+    per = int(len(s)/2)
+    print(per)
+    s1 = 'abcd'
+    per1 = int(len(s1)/2)
+    print(per1)
+
+
+    x = s[math.ceil(len(s)/2):]+s1[math.ceil(len(s1)/2):]+s[:math.ceil(len(s)/2)]+s1[:math.ceil(len(s1)/2)]
+    print(x)
+
+
+def fill_user_mobile():
+    # ------------------读数据---------------------------------
+    fileName = "/Users/xiangzy/Desktop/py.xls"
+    bk = xlrd.open_workbook(fileName)
+    shxrange = range(bk.nsheets)
+    try:
+        sh = bk.sheet_by_name("Sheet1")
+    except Exception as e:
+        print('read exception {}'.format(e))
+    nrows = sh.nrows  # 获取行数
+    book = Workbook(encoding='utf-8')
+    sheet = book.add_sheet('Sheet1')  # 创建一个sheet
+    for i in range(1, nrows):
+        row_data = sh.row_values(i)
+        # 获取第i行第3列数据
+        # sh.cell_value(i,3)
+        # ---------写出文件到excel--------
+        print("-----正在写入 " + str(i) + " 行")
+        try:
+            uuid = sh.cell_value(i, 4)
+            data = get_request('http://idp.hifuntv.com/in/GetUserInfoByUuid?invoker=itvsdk&sign=d3cafca88773700f411999fec9e159a9f38daf4f&data=%7B%22uuid%22%3A%22{}%22%2C%22return%22%3A%22relate_mobile%22%2C%22_support%22%3A%2210000000%22%2C%22uip%22%3A%22127.0.0.1%22%2C%22seqid%22%3A%2220b9bc2644476e5f2dff094bc7d8b3c5%22%2C%22is_sign%22%3A1%7D'.format(uuid))
+            print('uuid:{} result:{}'.format(uuid, data))
+            if data is not None:
+                mobile = data.get('msg', {}).get('relate_mobile', '')
+                if len(mobile) < 1:
+                    continue
+                sheet.write(i, 38, label=mobile)  # 向第1行第1列写入获取到的值
+        except Exception as e:
+            print('{} have exception {}'.format(i, e))
+    book.save("/Users/xiangzy/Desktop/py-mobile.xls")
 
 
 # test()
@@ -139,4 +225,5 @@ def temp():
 # fei(3, 0.02, 1000)
 # comp()
 # sales(40)
-temp()
+# temp()
+fill_user_mobile()
