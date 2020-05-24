@@ -62,6 +62,7 @@ def split_video(videopath):
     with open(os.path.join(img_dir, 'data.txt'), 'w') as f:
         for txt in data_txt:
             f.write(txt)
+    return videopath
 
 
 def parallel_split(videodir):
@@ -81,13 +82,15 @@ def parallel_split(videodir):
     # 并行 37.63
     start = time.time()
     avis = []
+    xxx = []
     for avi in os.listdir(videodir):
         if os.path.splitext(avi)[1] != '.avi':
             continue
         avis.append(os.path.join(videodir, avi))
     with concurrent.futures.ProcessPoolExecutor() as executor:
-        executor.map(split_video, avis)
+        xxx = list(executor.map(split_video, avis))
     print('视频拆分时长：{:.2f}s'.format((time.time() - start)))
+    print(xxx)
 
 
 if __name__ == '__main__':
