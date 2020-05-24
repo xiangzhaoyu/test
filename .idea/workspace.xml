@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb8ea229-8f13-4ce7-b37c-062f92a982a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/findline.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/removemask.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parallel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,6 +24,7 @@
     <SUITE FILE_PATH="coverage/test$log1.coverage" NAME="log1 Coverage Results" MODIFIED="1554709491820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$test_vgg.coverage" NAME="test_vgg Coverage Results" MODIFIED="1588149184741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$pic_audit.coverage" NAME="pic_audit Coverage Results" MODIFIED="1553514854473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/test$parallel.coverage" NAME="parallel Coverage Results" MODIFIED="1590312595477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$test_py.coverage" NAME="test_py Coverage Results" MODIFIED="1585878098657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$pic_audit_zbar.coverage" NAME="pic_audit_zbar Coverage Results" MODIFIED="1554034324280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$log2.coverage" NAME="log2 Coverage Results" MODIFIED="1554709497585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -43,16 +43,16 @@
     <session id="975538344">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="60" />
+          <entry key="project.closed" value="61" />
           <entry key="project.open.time.0" value="23" />
-          <entry key="project.open.time.1" value="27" />
+          <entry key="project.open.time.1" value="28" />
           <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="3" />
-          <entry key="project.opened" value="62" />
+          <entry key="project.opened" value="63" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -65,7 +65,7 @@
           <entry key="md" value="7" />
           <entry key="nodeids" value="1" />
           <entry key="png" value="3" />
-          <entry key="py" value="98" />
+          <entry key="py" value="100" />
           <entry key="sh" value="1" />
           <entry key="txt" value="13" />
         </counts>
@@ -77,7 +77,7 @@
           <entry key="Image" value="20" />
           <entry key="Markdown" value="7" />
           <entry key="PLAIN_TEXT" value="17" />
-          <entry key="Python" value="98" />
+          <entry key="Python" value="100" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -85,9 +85,9 @@
           <entry key="gitignore" value="23" />
           <entry key="html" value="8" />
           <entry key="md" value="128" />
-          <entry key="py" value="13208" />
+          <entry key="py" value="13695" />
           <entry key="sh" value="331" />
-          <entry key="txt" value="41" />
+          <entry key="txt" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -95,8 +95,8 @@
           <entry key="Git file" value="23" />
           <entry key="HTML" value="8" />
           <entry key="Markdown" value="128" />
-          <entry key="PLAIN_TEXT" value="372" />
-          <entry key="Python" value="13208" />
+          <entry key="PLAIN_TEXT" value="390" />
+          <entry key="Python" value="13695" />
         </counts>
       </usages-collector>
     </session>
@@ -104,12 +104,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/findline.py">
+        <entry file="file://$PROJECT_DIR$/parallel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1315">
-              <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="4" />
+            <state relative-caret-position="386">
+              <caret line="87" column="27" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="27" />
               <folding>
-                <element signature="e#166#176#0" expanded="true" />
+                <element signature="e#158#167#0" expanded="true" />
+                <marker date="1590312680142" expanded="true" signature="1772:2469" ph="..." />
               </folding>
             </state>
           </provider>
@@ -178,6 +179,7 @@
         <option value="$PROJECT_DIR$/test_vgg.py" />
         <option value="$PROJECT_DIR$/removemask.py" />
         <option value="$PROJECT_DIR$/findline.py" />
+        <option value="$PROJECT_DIR$/parallel.py" />
       </list>
     </option>
   </component>
@@ -187,7 +189,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="797" />
@@ -240,7 +242,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.findline">
+  <component name="RunManager" selected="Python.parallel">
     <configuration name="findline" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -263,7 +265,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="keras_test2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="parallel" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -276,7 +278,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/keras_test2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/parallel.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -352,19 +354,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.keras_test2" />
       <item itemvalue="Python.test_py" />
       <item itemvalue="Python.test_vgg" />
       <item itemvalue="Python.removemask" />
       <item itemvalue="Python.findline" />
+      <item itemvalue="Python.parallel" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.parallel" />
         <item itemvalue="Python.findline" />
         <item itemvalue="Python.removemask" />
         <item itemvalue="Python.test_vgg" />
         <item itemvalue="Python.test_py" />
-        <item itemvalue="Python.keras_test2" />
       </list>
     </recent_temporary>
   </component>
@@ -421,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588149861806</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="天骑医学 视频截帧hsv颜色区间处理">
+      <created>1590308901392</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1590308901392</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -451,9 +460,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3018598" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30615166" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -487,7 +497,8 @@
     <MESSAGE value="add some local code" />
     <MESSAGE value="饭团信安脚本" />
     <MESSAGE value="some test py" />
-    <option name="LAST_COMMIT_MESSAGE" value="some test py" />
+    <MESSAGE value="天骑医学 视频截帧hsv颜色区间处理" />
+    <option name="LAST_COMMIT_MESSAGE" value="天骑医学 视频截帧hsv颜色区间处理" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -742,11 +753,17 @@
           <line>8</line>
           <option name="timeStamp" value="71" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/parallel.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="np.sum(dif)" language="Python" />
+        <watch expression="os.path.splitext(avi)[1]" />
       </configuration>
     </watches-manager>
   </component>
@@ -765,13 +782,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///anaconda3/envs/tensorflow/lib/python3.6/ctypes/util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="309" column="12" selection-start-line="309" selection-start-column="12" selection-end-line="309" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///anaconda3/envs/tensorflow/lib/python3.6/site-packages/pyzbar/wrapper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -1103,10 +1113,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/findline.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1315">
-          <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="4" />
+        <state relative-caret-position="693">
+          <caret line="116" column="22" lean-forward="true" selection-start-line="114" selection-end-line="116" selection-end-column="22" />
           <folding>
             <element signature="e#166#176#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parallel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="87" column="27" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="27" />
+          <folding>
+            <element signature="e#158#167#0" expanded="true" />
+            <marker date="1590312680142" expanded="true" signature="1772:2469" ph="..." />
           </folding>
         </state>
       </provider>
