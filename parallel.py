@@ -90,25 +90,25 @@ def parallel_split(videodir):
     :return:
     """
     # 串行处理 58.85s
-    start = time.time()
-    for avi in os.listdir(videodir):
-        if os.path.splitext(avi)[1] != '.avi':
-            continue
-        split_video(os.path.join(videodir, avi))
-    print('视频拆分时长：{:.2f}s'.format((time.time() - start)))
-
-    # 并行 37.63
     # start = time.time()
-    # avis = []
-    # xxx = []
     # for avi in os.listdir(videodir):
     #     if os.path.splitext(avi)[1] != '.avi':
     #         continue
-    #     avis.append(os.path.join(videodir, avi))
-    # with concurrent.futures.ProcessPoolExecutor() as executor:
-    #     xxx = list(executor.map(split_video, avis))
+    #     split_video(os.path.join(videodir, avi))
     # print('视频拆分时长：{:.2f}s'.format((time.time() - start)))
-    # print(xxx)
+
+    # 并行 37.63
+    start = time.time()
+    avis = []
+    xxx = []
+    for avi in os.listdir(videodir):
+        if os.path.splitext(avi)[1] != '.avi':
+            continue
+        avis.append(os.path.join(videodir, avi))
+    with concurrent.futures.ProcessPoolExecutor() as executor:
+        xxx = list(executor.map(split_video, avis))
+    print('视频拆分时长：{:.2f}s'.format((time.time() - start)))
+    print(xxx)
 
 
 if __name__ == '__main__':
