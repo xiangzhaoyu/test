@@ -112,5 +112,5 @@ def parallel_split(videodir):
 
 
 if __name__ == '__main__':
-    path = '/Users/xiangzy/Desktop/202005241514'
+    path = '/Users/xiangzy/Desktop/new1'
     parallel_split(path)
