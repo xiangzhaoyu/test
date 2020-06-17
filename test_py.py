@@ -26,12 +26,25 @@ import time
 
 import json
 
-with open('/Users/xiangzy/Desktop/ocr_match_tasks.json', 'r', encoding='utf-8') as f:
-    load_dic = json.load(f)
-    with open('/Users/xiangzy/Desktop/ocr_video.csv', 'a+', encoding='utf-8') as wf:
-        try:
-            wf.write('帧频\t合集ID\t任务ID\t视频名称\t视频ID\t视频地址\t数据\n')
-            for vf in load_dic:
-                wf.write('{}\t{}\t{}\t{}\t{}\t{}\t{}\n'.format(vf.get('framerate', ''), vf.get('extra', {}).get('cid', ''), vf.get('extra', {}).get('taskid', ''), vf.get('extra', {}).get('name', ''), vf.get('extra', {}).get('id', ''), vf.get('url', ''), vf.get('data', json.dumps(vf.get('data', {})))))
-        except Exception as e:
-            print(e)
+# with open('/Users/xiangzy/Desktop/ocr_match_tasks.json', 'r', encoding='utf-8') as f:
+#     load_dic = json.load(f)
+#     with open('/Users/xiangzy/Desktop/ocr_video.csv', 'a+', encoding='utf-8') as wf:
+#         try:
+#             wf.write('帧频\t合集ID\t任务ID\t视频名称\t视频ID\t视频地址\t数据\n')
+#             for vf in load_dic:
+#                 wf.write('{}\t{}\t{}\t{}\t{}\t{}\t{}\n'.format(vf.get('framerate', ''), vf.get('extra', {}).get('cid', ''), vf.get('extra', {}).get('taskid', ''), vf.get('extra', {}).get('name', ''), vf.get('extra', {}).get('id', ''), vf.get('url', ''), vf.get('data', json.dumps(vf.get('data', {})))))
+#         except Exception as e:
+#             print(e)
+
+
+import time
+import random
+
+i = 0
+while i < 100:
+    print("current i is {} ".format(i))
+    t = random.randint(0, 1000)
+    t = t * 0.001
+    time.sleep(t)
+    print("current sleep {}".format(t))
+    i += 1
