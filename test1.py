@@ -226,4 +226,10 @@ def fill_user_mobile():
 # comp()
 # sales(40)
 # temp()
-fill_user_mobile()
+
+import hashlib
+
+md5_hash = hashlib.md5()
+md5_hash.update("9vhACx[|0Lx<".encode())
+a = md5_hash.hexdigest()
+print(a)

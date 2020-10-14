@@ -12,6 +12,7 @@ import cv2
 import time
 import numpy as np
 import concurrent.futures
+import shutil
 
 
 lower_red = np.array([125, 43, 46])
@@ -111,6 +112,74 @@ def parallel_split(videodir):
     print(xxx)
 
 
+def get_pic_hsv(imgPath):
+    """
+    获取图片hsv值
+    :param imgPath:
+    :return:
+    """
+    try:
+        if not os.path.exists(imgPath):
+            return (0, imgPath)
+        img = cv2.imread(imgPath)
+        # change to hsv model
+        hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+        # get mask 利用inRange()函数和HSV模型中蓝色范围的上下界获取mask，mask中原视频中的蓝色部分会被弄成白色，其他部分黑色。
+        mask = cv2.inRange(hsv, lower_red, upper_red)
+        return (np.sum(mask == 255), imgPath)
+    except Exception as e:
+        print(imgPath, e)
+        return (0, imgPath)
+
+
+def filter_pics(source_dir, target_dir, topn):
+    """
+    过滤图片并输出
+    :param source_dir:
+    :param target_dir:
+    :param topn:
+    :return:
+    """
+    if not os.path.exists(target_dir):
+        os.makedirs(target_dir)
+    for dir_name in os.listdir(source_dir):
+        img_path = os.path.join(source_dir, dir_name)
+        if not os.path.isdir(img_path):
+            continue
+        imgs = []
+        for img_name in os.listdir(img_path):
+            if os.path.splitext(img_name)[-1] not in ['.jpg', '.png', '.jpeg']:
+                continue
+            imgs.append(os.path.join(img_path, img_name))
+        target_path = os.path.join(target_dir, dir_name)
+        # 处理的图片列表
+        top_n_pics = []
+        if not os.path.exists(target_path):
+            os.makedirs(target_path)
+            # 获取hsv值
+            with concurrent.futures.ThreadPoolExecutor() as executor:
+                hsv_result = list(executor.map(get_pic_hsv, imgs))
+            # 排序取前5
+            hsv_result_dict = {}
+            if hsv_result:
+                for hr in hsv_result:
+                    if not hr or len(hr) != 2:
+                        continue
+                    hsv_result_dict[hr[0]] = hr[1]
+            current_n = 0
+            top_n = topn
+            for key in sorted(hsv_result_dict, reverse=True):
+                if current_n > top_n:
+                    break
+                value = hsv_result_dict[key]
+                if value:
+                    top_n_pics.append(value)
+                    current_n += 1
+        # 写入目标图
+        for imp in top_n_pics:
+            shutil.copy(imp, os.path.join(target_path, os.path.split(imp)[-1]))
+
+
 if __name__ == '__main__':
-    path = '/Users/xiangzy/Desktop/new1'
-    parallel_split(path)
+    path = '/Users/xiangzy/Desktop/tmp'
+    filter_pics(path, "/Users/xiangzy/Desktop/123", 10)
