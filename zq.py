@@ -145,9 +145,26 @@ def del_txt(t_dir):
                 os.remove(os.path.join(os.path.join(t_dir, e), i))
 
 
+def check_dir(t_dir):
+    """
+    检查当前目录下是否有三级目录
+    :param t_dir:
+    :return:
+    """
+    for d1 in os.listdir(t_dir):
+        d1_dir = os.path.join(t_dir, d1)
+        if os.path.isdir(d1_dir):
+            for d2 in os.listdir(d1_dir):
+                d2_dir = os.path.join(d1_dir, d2)
+                if os.path.isdir(d2_dir):
+                    print(d2_dir + "下面有目录请查看")
+                    break
+
+
 if __name__ == '__main__':
-    # filter_img('/Users/xiangzy/Downloads/21611470094ffadc-1#1', '/Users/xiangzy/Desktop/ww/xml')
-    xml_2_yolo('/Users/xiangzy/PycharmProjects/tianqi/train_data/20201029/xml', '/Users/xiangzy/PycharmProjects/tianqi/train_data/20201029/data.txt')
+    # check_dir('/Users/xiangzy/PycharmProjects/tianqi/train_data/20201102/xml')
+    # filter_img('/Users/xiangzy/Downloads/81712ea854af7799-1#', '/Users/xiangzy/Desktop/ww')
+    xml_2_yolo('/Users/xiangzy/PycharmProjects/tianqi/train_data/20201102/xml', '/Users/xiangzy/PycharmProjects/tianqi/train_data/20201102/data.txt')
 
 
 

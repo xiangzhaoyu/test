@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb8ea229-8f13-4ce7-b37c-062f92a982a1" name="Default Changelist" comment="有菌图初选">
-      <change afterPath="$PROJECT_DIR$/zq.py" afterDir="false" />
+    <list default="true" id="cb8ea229-8f13-4ce7-b37c-062f92a982a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/qq_boom.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter_img.py" beforeDir="false" afterPath="$PROJECT_DIR$/filter_img.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zq.py" beforeDir="false" afterPath="$PROJECT_DIR$/zq.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +20,7 @@
     <SUITE FILE_PATH="coverage/test$pytest_in_img_fix_py.coverage" NAME="pytest in img_fix.py Coverage Results" MODIFIED="1545271326916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$huawei2.coverage" NAME="huawei2 Coverage Results" MODIFIED="1560418421534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$pytest_in_img_trans_py.coverage" NAME="pytest in img_trans.py Coverage Results" MODIFIED="1545009861826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/test$zq.coverage" NAME="zq Coverage Results" MODIFIED="1603954245181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/test$zq.coverage" NAME="zq Coverage Results" MODIFIED="1604310956211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$test_lstm.coverage" NAME="test_lstm Coverage Results" MODIFIED="1545383552147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$pytest_in_test_lstm_py.coverage" NAME="pytest in test_lstm.py Coverage Results" MODIFIED="1545380681209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$keras_test2.coverage" NAME="keras_test2 Coverage Results" MODIFIED="1585560543461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -40,7 +42,7 @@
     <SUITE FILE_PATH="coverage/test$oracle2mysql.coverage" NAME="oracle2mysql Coverage Results" MODIFIED="1591084188723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$get_huawei.coverage" NAME="get_huawei Coverage Results" MODIFIED="1560425664966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$createbox.coverage" NAME="createbox Coverage Results" MODIFIED="1544405422427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/test$filter_img.coverage" NAME="filter_img Coverage Results" MODIFIED="1602587300912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/test$filter_img.coverage" NAME="filter_img Coverage Results" MODIFIED="1603965926696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$img_fix.coverage" NAME="img_fix Coverage Results" MODIFIED="1545272240306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$kafka_test.coverage" NAME="kafka_test Coverage Results" MODIFIED="1573454685018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$test_keras.coverage" NAME="test_keras Coverage Results" MODIFIED="1562234751404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -54,18 +56,18 @@
     <session id="975538344">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="89" />
-          <entry key="project.open.time.0" value="26" />
+          <entry key="project.closed" value="94" />
+          <entry key="project.open.time.0" value="28" />
           <entry key="project.open.time.1" value="37" />
-          <entry key="project.open.time.10" value="5" />
-          <entry key="project.open.time.11" value="3" />
+          <entry key="project.open.time.10" value="6" />
+          <entry key="project.open.time.11" value="4" />
           <entry key="project.open.time.15" value="3" />
-          <entry key="project.open.time.2" value="5" />
+          <entry key="project.open.time.2" value="6" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.7" value="3" />
           <entry key="project.open.time.8" value="4" />
           <entry key="project.open.time.9" value="6" />
-          <entry key="project.opened" value="93" />
+          <entry key="project.opened" value="98" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -79,7 +81,7 @@
           <entry key="md" value="7" />
           <entry key="nodeids" value="1" />
           <entry key="png" value="3" />
-          <entry key="py" value="238" />
+          <entry key="py" value="242" />
           <entry key="sh" value="3" />
           <entry key="txt" value="15" />
         </counts>
@@ -92,7 +94,7 @@
           <entry key="Image" value="27" />
           <entry key="Markdown" value="7" />
           <entry key="PLAIN_TEXT" value="21" />
-          <entry key="Python" value="238" />
+          <entry key="Python" value="242" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -101,7 +103,7 @@
           <entry key="gitignore" value="23" />
           <entry key="html" value="8" />
           <entry key="md" value="128" />
-          <entry key="py" value="18960" />
+          <entry key="py" value="19404" />
           <entry key="sh" value="1334" />
           <entry key="txt" value="85" />
         </counts>
@@ -113,7 +115,7 @@
           <entry key="HTML" value="8" />
           <entry key="Markdown" value="128" />
           <entry key="PLAIN_TEXT" value="1419" />
-          <entry key="Python" value="18960" />
+          <entry key="Python" value="19404" />
         </counts>
       </usages-collector>
     </session>
@@ -121,12 +123,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/zq.py">
+        <entry file="file://$PROJECT_DIR$/qq_boom.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="149" column="138" selection-start-line="149" selection-start-column="138" selection-end-line="149" selection-end-column="138" />
+            <state relative-caret-position="345">
+              <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
               <folding>
-                <element signature="e#153#187#0" expanded="true" />
+                <element signature="e#156#171#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,6 +156,7 @@
       <find>hsv</find>
       <find>1344</find>
       <find>shutil.copy</find>
+      <find>lap</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -162,7 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pic_audit_zbar.py" />
         <option value="$PROJECT_DIR$/logger_helper.py" />
         <option value="$PROJECT_DIR$/log1.py" />
         <option value="$PROJECT_DIR$/log2.py" />
@@ -213,6 +215,7 @@
         <option value="$PROJECT_DIR$/parallel.py" />
         <option value="$PROJECT_DIR$/filter_img.py" />
         <option value="$PROJECT_DIR$/zq.py" />
+        <option value="$PROJECT_DIR$/qq_boom.py" />
       </list>
     </option>
   </component>
@@ -225,7 +228,7 @@
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="805" />
+    <option name="height" value="810" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -312,7 +315,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/filter_img.py" />
-      <option name="PARAMETERS" value="$USER_HOME$/Desktop/tmp/ $USER_HOME$/Desktop/123/" />
+      <option name="PARAMETERS" value="$USER_HOME$/Desktop/sss/ $USER_HOME$/Desktop/123/" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -519,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602634739884</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="有菌图初选">
+      <created>1603955265100</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1603955265100</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -551,12 +561,12 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27110156" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28898427" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2433735" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2433735" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -915,11 +925,6 @@
           <option name="timeStamp" value="85" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/filter_img.py</url>
-          <line>49</line>
-          <option name="timeStamp" value="92" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/zq.py</url>
           <line>111</line>
           <option name="timeStamp" value="94" />
@@ -933,6 +938,31 @@
           <url>file://$PROJECT_DIR$/zq.py</url>
           <line>15</line>
           <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/filter_img.py</url>
+          <line>124</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/filter_img.py</url>
+          <line>139</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/filter_img.py</url>
+          <line>145</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/filter_img.py</url>
+          <line>174</line>
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/zq.py</url>
+          <line>153</line>
+          <option name="timeStamp" value="103" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -969,13 +999,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///anaconda3/envs/tensorflow/lib/python3.6/site-packages/PIL/ImageFont.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
@@ -1091,13 +1114,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/findline.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-501">
-          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/get_huawei.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1207,9 +1223,6 @@
     <entry file="file://$PROJECT_DIR$/test_lstm.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_pic.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_py.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="685">
@@ -1257,25 +1270,46 @@
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/-615047134/cv2/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/xxxxx.jpg" />
+    <entry file="file://$USER_HOME$/Downloads/国色天香_钓人的鱼.txt" />
+    <entry file="file://$USER_HOME$/Downloads/gstx.txt" />
+    <entry file="file://$PROJECT_DIR$/test_pic.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/findline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="29" column="60" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/filter_img.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="58" column="31" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="31" />
+        <state relative-caret-position="221">
+          <caret line="174" selection-start-line="174" selection-end-line="174" />
           <folding>
             <element signature="e#160#169#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xxxxx.jpg" />
-    <entry file="file://$USER_HOME$/Downloads/国色天香_钓人的鱼.txt" />
-    <entry file="file://$USER_HOME$/Downloads/gstx.txt" />
     <entry file="file://$PROJECT_DIR$/zq.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="149" column="138" selection-start-line="149" selection-start-column="138" selection-end-line="149" selection-end-column="138" />
+        <state relative-caret-position="618">
+          <caret line="166" column="138" selection-start-line="166" selection-start-column="138" selection-end-line="166" selection-end-column="138" />
           <folding>
             <element signature="e#153#187#0" expanded="true" />
+            <marker date="1604310810671" expanded="true" signature="5037:5040" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qq_boom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+          <folding>
+            <element signature="e#156#171#0" expanded="true" />
           </folding>
         </state>
       </provider>
