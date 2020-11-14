@@ -162,9 +162,9 @@ def check_dir(t_dir):
 
 
 if __name__ == '__main__':
-    # check_dir('/Users/xiangzy/PycharmProjects/tianqi/train_data/20201102/xml')
-    # filter_img('/Users/xiangzy/Downloads/81712ea854af7799-1#', '/Users/xiangzy/Desktop/ww')
-    xml_2_yolo('/Users/xiangzy/PycharmProjects/tianqi/train_data/20201102/xml', '/Users/xiangzy/PycharmProjects/tianqi/train_data/20201102/data.txt')
+    # check_dir('/Users/xiangzy/Desktop/ww/c5066a86d7ca41e3-1')
+    filter_img('/Users/xiangzy/Downloads/dd1e9ff09fc09250', '/Users/xiangzy/Desktop/ww')
+    # xml_2_yolo('/Users/xiangzy/PycharmProjects/tianqi/train_data/20201110/xml', '/Users/xiangzy/PycharmProjects/tianqi/train_data/20201110/data.txt')
 
 
 
