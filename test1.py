@@ -234,8 +234,35 @@ def fill_user_mobile():
 # a = md5_hash.hexdigest()
 # print(a)
 
-import json
+# import json
+#
+# st = '{"data":[{"id":"24185487","company_id":"1","request_id":"2b62050791b7447da37bc32f469a1d57","did":"7da87e439a845f7456b15879feac79f5","knowledge_id":"36","message_type":"0","click_message":"36","message_code":"1","action":"1","feed_back_id":null,"click_state":"0","message":"取消连续包月","result":"{"answer":"【支付宝退订】：打开支付宝“我的”→“设置”→“支付设置”→“免密支付/自动扣款”→选定“芒果TV”取消订阅。\r\n【微信退订】：打开微信“我”→“支付”→右上角“…”→“扣费服务”→选定“芒果TV”取消订阅。\r\n【苹果退订】：1、登录您开通连续包月时的Apple ID；2、点击苹果手机【设置】进入【iTunesStore与App Store】;点击【Apple ID】;点击【查看Apple ID】；在账户设置页面点击【订阅】；取消芒果TV会员的订阅即可（如果在订阅内无法找到选项，建议您可以咨询苹果客服协助您取消，苹果客服联系方式：4006668800）。\r\n【招行一网通退订】：打开招商银行APP“我的”→“设置”→“支付设置”→“免密支付”→选定“芒果TV”关闭服务。\r\n【移动话费退订】：请联系人工客服退订。\r\n【联通话费退订】：发送TD到10655198665。\r\n【电信话费退订】：拨打电话4008689689进行退订。","type":0,"list":[{"feedBack":[{"clickState":1,"title":"有用","feedBackId":"looyu_knowledge|30"},{"clickState":0,"title":"无用","feedBackId":"looyu_knowledge|30"}],"loginState":0,"icon":"","message":"【支付宝退订】：打开支付宝“我的”→“设置”→“支付设置”→“免密支付/自动扣款”→选定“芒果TV”取消订阅。\r\n【微信退订】：打开微信“我”→“支付”→右上角“…”→“扣费服务”→选定“芒果TV”取消订阅。\r\n【苹果退订】：1、登录您开通连续包月时的Apple ID；2、点击苹果手机【设置】进入【iTunesStore与App Store】;点击【Apple ID】;点击【查看Apple ID】；在账户设置页面点击【订阅】；取消芒果TV会员的订阅即可（如果在订阅内无法找到选项，建议您可以咨询苹果客服协助您取消，苹果客服联系方式：4006668800）。\r\n【招行一网通退订】：打开招商银行APP“我的”→“设置”→“支付设置”→“免密支付”→选定“芒果TV”关闭服务。\r\n【移动话费退订】：请联系人工客服退订。\r\n【联通话费退订】：发送TD到10655198665。\r\n【电信话费退订】：拨打电话4008689689进行退订。","knowledgeId":30,"imgUrl":"","voiceUrl":"","button":"","backImg":"","messageType":0,"videoUrl":"","backColor":"","ask":"取消连续包月","clickMessageCode":2,"clickMessage":"30","hrefLink":"","clickAction":"","desc":""}]}","search_time":"2020-11-10 18:25:20","platform":"android","device":"{"device":"vivo%20X9L","mod":"vivo%20X9L","ch":"vivo_sign","guid":"900000000579312054","uuid":"5d1056e769ba43d8850d7c61c0f79a90","idfa":"","ticket":"BTLHHGP9BHGGCI88TNRG","abroad":"0","sver":"aphone-7.1.2","oaid":"","sid":"0874a3f3-78f9-45cd-9ee1-cbec1bb19bcb","appVersion":"6.7.3","src":"mgtv","imei":"7da87e439a845f7456b15879feac79f5","gps":"","osVersion":"7.1.2","androidPatch":"6.7.3","channel":"vivo_sign","android_id":"7da87e439a845f7456b15879feac79f5","mf":"vivo","mac":"7da87e439a845f7456b15879feac79f5","did":"7da87e439a845f7456b15879feac79f5","net":"1","osType":"android","aver":"imgotv-aphone-6.7.3","isdebug":"0"}","extend":"","parameter":"c=1&jId=1&pageName=me"}],"database":"looyu","es":1605004278000,"id":1178,"isDdl":false,"mysqlType":{"id":"bigint(20)","company_id":"int(11)","request_id":"varchar(50)","did":"varchar(100)","knowledge_id":"int(11)","message_type":"int(11)","click_message":"varchar(500)","message_code":"int(11)","action":"int(11)","feed_back_id":"varchar(100)","click_state":"int(11)","message":"varchar(500)","result":"text","search_time":"timestamp","platform":"varchar(50)","device":"text","extend":"text","parameter":"text"},"old":null,"pkNames":["id"],"sql":"","sqlType":{"id":-5,"company_id":4,"request_id":12,"did":12,"knowledge_id":4,"message_type":4,"click_message":12,"message_code":4,"action":4,"feed_back_id":12,"click_state":4,"message":12,"result":2005,"search_time":93,"platform":12,"device":2005,"extend":2005,"parameter":2005},"table":"ol_robot_search","ts":1605004278190,"type":"INSERT"}'
+# ss = json.loads(st)
+# print(ss)
 
-st = '{"data":[{"id":"24185487","company_id":"1","request_id":"2b62050791b7447da37bc32f469a1d57","did":"7da87e439a845f7456b15879feac79f5","knowledge_id":"36","message_type":"0","click_message":"36","message_code":"1","action":"1","feed_back_id":null,"click_state":"0","message":"取消连续包月","result":"{"answer":"【支付宝退订】：打开支付宝“我的”→“设置”→“支付设置”→“免密支付/自动扣款”→选定“芒果TV”取消订阅。\r\n【微信退订】：打开微信“我”→“支付”→右上角“…”→“扣费服务”→选定“芒果TV”取消订阅。\r\n【苹果退订】：1、登录您开通连续包月时的Apple ID；2、点击苹果手机【设置】进入【iTunesStore与App Store】;点击【Apple ID】;点击【查看Apple ID】；在账户设置页面点击【订阅】；取消芒果TV会员的订阅即可（如果在订阅内无法找到选项，建议您可以咨询苹果客服协助您取消，苹果客服联系方式：4006668800）。\r\n【招行一网通退订】：打开招商银行APP“我的”→“设置”→“支付设置”→“免密支付”→选定“芒果TV”关闭服务。\r\n【移动话费退订】：请联系人工客服退订。\r\n【联通话费退订】：发送TD到10655198665。\r\n【电信话费退订】：拨打电话4008689689进行退订。","type":0,"list":[{"feedBack":[{"clickState":1,"title":"有用","feedBackId":"looyu_knowledge|30"},{"clickState":0,"title":"无用","feedBackId":"looyu_knowledge|30"}],"loginState":0,"icon":"","message":"【支付宝退订】：打开支付宝“我的”→“设置”→“支付设置”→“免密支付/自动扣款”→选定“芒果TV”取消订阅。\r\n【微信退订】：打开微信“我”→“支付”→右上角“…”→“扣费服务”→选定“芒果TV”取消订阅。\r\n【苹果退订】：1、登录您开通连续包月时的Apple ID；2、点击苹果手机【设置】进入【iTunesStore与App Store】;点击【Apple ID】;点击【查看Apple ID】；在账户设置页面点击【订阅】；取消芒果TV会员的订阅即可（如果在订阅内无法找到选项，建议您可以咨询苹果客服协助您取消，苹果客服联系方式：4006668800）。\r\n【招行一网通退订】：打开招商银行APP“我的”→“设置”→“支付设置”→“免密支付”→选定“芒果TV”关闭服务。\r\n【移动话费退订】：请联系人工客服退订。\r\n【联通话费退订】：发送TD到10655198665。\r\n【电信话费退订】：拨打电话4008689689进行退订。","knowledgeId":30,"imgUrl":"","voiceUrl":"","button":"","backImg":"","messageType":0,"videoUrl":"","backColor":"","ask":"取消连续包月","clickMessageCode":2,"clickMessage":"30","hrefLink":"","clickAction":"","desc":""}]}","search_time":"2020-11-10 18:25:20","platform":"android","device":"{"device":"vivo%20X9L","mod":"vivo%20X9L","ch":"vivo_sign","guid":"900000000579312054","uuid":"5d1056e769ba43d8850d7c61c0f79a90","idfa":"","ticket":"BTLHHGP9BHGGCI88TNRG","abroad":"0","sver":"aphone-7.1.2","oaid":"","sid":"0874a3f3-78f9-45cd-9ee1-cbec1bb19bcb","appVersion":"6.7.3","src":"mgtv","imei":"7da87e439a845f7456b15879feac79f5","gps":"","osVersion":"7.1.2","androidPatch":"6.7.3","channel":"vivo_sign","android_id":"7da87e439a845f7456b15879feac79f5","mf":"vivo","mac":"7da87e439a845f7456b15879feac79f5","did":"7da87e439a845f7456b15879feac79f5","net":"1","osType":"android","aver":"imgotv-aphone-6.7.3","isdebug":"0"}","extend":"","parameter":"c=1&jId=1&pageName=me"}],"database":"looyu","es":1605004278000,"id":1178,"isDdl":false,"mysqlType":{"id":"bigint(20)","company_id":"int(11)","request_id":"varchar(50)","did":"varchar(100)","knowledge_id":"int(11)","message_type":"int(11)","click_message":"varchar(500)","message_code":"int(11)","action":"int(11)","feed_back_id":"varchar(100)","click_state":"int(11)","message":"varchar(500)","result":"text","search_time":"timestamp","platform":"varchar(50)","device":"text","extend":"text","parameter":"text"},"old":null,"pkNames":["id"],"sql":"","sqlType":{"id":-5,"company_id":4,"request_id":12,"did":12,"knowledge_id":4,"message_type":4,"click_message":12,"message_code":4,"action":4,"feed_back_id":12,"click_state":4,"message":12,"result":2005,"search_time":93,"platform":12,"device":2005,"extend":2005,"parameter":2005},"table":"ol_robot_search","ts":1605004278190,"type":"INSERT"}'
-ss = json.loads(st)
-print(ss)
+def getFiles(t_dir):
+    files = []
+    for file in os.listdir(t_dir):
+        x_dir = os.path.join(t_dir, file)
+        if os.path.isdir(x_dir):
+            fs = getFiles(x_dir)
+            files.extend(fs)
+        else:
+            files.append(x_dir)
+    return files
+
+# 删除git直接拷贝产生的垃圾文件
+s_dir = '/Volumes/HIKVISION/work/imgo-risk'
+files = getFiles(s_dir)
+for f in files:
+    if not os.path.isfile(f):
+        continue
+    xx = os.path.split(f)[-1]
+    if xx[0:2] == '._':
+        # os.remove(f)
+        print(f)
+
+# s = {1: (1, 'a'), 5: (2, 'b'), 9: (3, 'c'), 11: (1, 'd'), 2: (9, 'e'), 3: (3, 'f')}
+# x = sorted(s)
+# y = sorted(s, reverse=True)
+# z = x
