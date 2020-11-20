@@ -43,6 +43,9 @@ def get_laplacian(img):
 # -- 紫色
 lower_red = np.array([125, 43, 46])
 upper_red = np.array([155, 255, 255])
+# -- 蓝色
+lower_blue = np.array([35, 43, 46])
+upper_blue = np.array([77, 255, 255])
 
 
 def split_video(videopath):
@@ -112,6 +115,30 @@ def split_video1(videopath):
     # cv2.destroyAllWindows()
 
 
+def re_draw_imgs(s_dir, t_dir):
+    """
+    根据色值画图
+    :param s_dir:
+    :param t_dir:
+    :return:
+    """
+    if not os.path.exists(t_dir):
+        os.makedirs(t_dir)
+    for file in os.listdir(s_dir):
+        ip = os.path.join(s_dir, file)
+        if os.path.isfile(ip) and os.path.splitext(ip)[-1] in ['.jpg']:
+            data = cv2.imread(ip)
+            if data is None:
+                continue
+            hsv = cv2.cvtColor(data, cv2.COLOR_BGR2HSV)
+            # mask = cv2.inRange(hsv, lower_red, upper_red)
+            mask = cv2.inRange(hsv, lower_blue, lower_blue)
+            hsv_str = 'hsv:{}'.format(int(np.sum(mask == 255)))
+            cv2.putText(mask, hsv_str, (200, 100), cv2.FONT_HERSHEY_COMPLEX, 2.0, (100, 200, 200), 5)
+            cv2.imwrite(os.path.join(t_dir, os.path.split(ip)[-1] + '__h.jpg'), mask)
+
+
 if __name__ == '__main__':
-    path = '/Users/xiangzy/Desktop/202005241514/202005241514522020.avi'
-    split_video1(path)
+    # path = '/Users/xiangzy/Desktop/202005241514/202005241514522020.avi'
+    # split_video1(path)
+    re_draw_imgs('/Volumes/HIKVISION/资料/锐智/天骑/样本/20201117/阴性400张', '/Volumes/HIKVISION/资料/锐智/天骑/样本/20201117/l')
