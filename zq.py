@@ -162,9 +162,10 @@ def check_dir(t_dir):
 
 
 if __name__ == '__main__':
-    check_dir('/Volumes/HIKVISION/20201118/cf56512cfc5bc250#1')
-    filter_img('/Volumes/HIKVISION/20201118/cf56512cfc5bc250#1', '/Volumes/HIKVISION/7')
-    # xml_2_yolo('/Users/xiangzy/PycharmProjects/tianqi/train_data/20201110/xml', '/Users/xiangzy/PycharmProjects/tianqi/train_data/20201110/data.txt')
+    # check_dir('/Volumes/HIKVISION/20201118/cf56512cfc5bc250#1')
+    # filter_img('/Volumes/HIKVISION/20201118/cf56512cfc5bc250#1', '/Volumes/HIKVISION/7')
+    xml_2_yolo('/Volumes/HIKVISION/pycharm/tianqi/train_data/20201120/xml', '/Volumes/HIKVISION/pycharm/tianqi/train_data/20201120/data.txt')
+
 
 
 

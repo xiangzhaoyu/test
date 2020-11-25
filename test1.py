@@ -252,7 +252,7 @@ def getFiles(t_dir):
     return files
 
 # 删除git直接拷贝产生的垃圾文件
-s_dir = '/Volumes/HIKVISION/work/imgo-risk'
+s_dir = '/Volumes/HIKVISION/资料/芒果/风控/baidu-sdk'
 files = getFiles(s_dir)
 for f in files:
     if not os.path.isfile(f):
