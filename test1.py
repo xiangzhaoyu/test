@@ -240,27 +240,6 @@ def fill_user_mobile():
 # ss = json.loads(st)
 # print(ss)
 
-def getFiles(t_dir):
-    files = []
-    for file in os.listdir(t_dir):
-        x_dir = os.path.join(t_dir, file)
-        if os.path.isdir(x_dir):
-            fs = getFiles(x_dir)
-            files.extend(fs)
-        else:
-            files.append(x_dir)
-    return files
-
-# 删除git直接拷贝产生的垃圾文件
-s_dir = '/Volumes/HIKVISION/资料/芒果/风控/baidu-sdk'
-files = getFiles(s_dir)
-for f in files:
-    if not os.path.isfile(f):
-        continue
-    xx = os.path.split(f)[-1]
-    if xx[0:2] == '._':
-        # os.remove(f)
-        print(f)
 
 # s = {1: (1, 'a'), 5: (2, 'b'), 9: (3, 'c'), 11: (1, 'd'), 2: (9, 'e'), 3: (3, 'f')}
 # x = sorted(s)

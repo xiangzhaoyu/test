@@ -161,10 +161,35 @@ def check_dir(t_dir):
                     break
 
 
+def getFiles(t_dir):
+    files = []
+    for file in os.listdir(t_dir):
+        x_dir = os.path.join(t_dir, file)
+        if os.path.isdir(x_dir):
+            fs = getFiles(x_dir)
+            files.extend(fs)
+        else:
+            files.append(x_dir)
+    return files
+
+
+def del_rubbshi(s_dir):
+    # 删除git直接拷贝产生的垃圾文件
+    # s_dir = '/Volumes/HIKVISION/pycharm/tianqi'
+    files = getFiles(s_dir)
+    for f in files:
+        if not os.path.isfile(f):
+            continue
+        xx = os.path.split(f)[-1]
+        if xx[0:2] == '._':
+            os.remove(f)
+            # print(f)
+
+
 if __name__ == '__main__':
-    # check_dir('/Volumes/HIKVISION/20201118/cf56512cfc5bc250#1')
-    # filter_img('/Volumes/HIKVISION/20201118/cf56512cfc5bc250#1', '/Volumes/HIKVISION/7')
-    xml_2_yolo('/Volumes/HIKVISION/pycharm/tianqi/train_data/20201120/xml', '/Volumes/HIKVISION/pycharm/tianqi/train_data/20201120/data.txt')
+    # check_dir('/Users/xiangzy/Desktop/xx')
+    # filter_img('/Users/xiangzy/Desktop/x2', '/Users/xiangzy/Desktop/x3')
+    xml_2_yolo('/Volumes/HIKVISION/pycharm/tianqi/train_data/20201201/xml', '/Volumes/HIKVISION/pycharm/tianqi/train_data/20201201/data.txt')
 
 
 
